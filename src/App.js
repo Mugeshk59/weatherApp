@@ -48,28 +48,32 @@ const App = () => {
           Search
         </button>
       </div>
-      {loader && <div className="content">Loading data...</div>}
+      {loader && (
+        <div className="content">
+          <p>Loading data...</p>
+        </div>
+      )}
       {cityWeather && (
         <div className="weatherDetails">
-          <div className="card">
+          <div className="weather-card">
             <p>
               <b>Temperature</b>
             </p>
             <p>{cityWeather.current.temp_c}°C</p>
           </div>
-          <div className="card">
+          <div className="weather-card">
             <p>
               <b>Humidity</b>
             </p>
             <p> {cityWeather.current.humidity}%</p>
           </div>
-          <div className="card">
+          <div className="weather-card">
             <p>
               <b>Condition</b>
             </p>
             <p> {cityWeather.current.condition.text}</p>
           </div>
-          <div className="card">
+          <div className="weather-card">
             <p>
               <b>Wind Speed</b>
             </p>
