@@ -54,7 +54,7 @@ const App = () => {
         </div>
       )}
       {cityWeather && (
-        <div className="weatherDetails">
+        <div className="weather-cards">
           <div className="weather-card">
             <p>
               <b>Temperature</b>
